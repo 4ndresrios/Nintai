@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: baloo2 ;
+    src: url(./Font/Baloo2-Regular.ttf);
+}
+
+body {
+    font-family: baloo2;
+    
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    
+}
+
+header nav div {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    text-align: right;
+}
+
+header nav div a img {
+    padding: 0.5px;
+    width: 150px;
+    margin-left: 30px;
+}
+
+header nav div div ul li {
+    margin: 0 15px;
+    transition: all 0.3s;
+}
+
+header nav div div ul li:hover {
+    transform: scale(1.05);
+}
+
+.paginaActual {
+    color: #5CB6A9;
+}
+
+header nav div div ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #D90080;
+    transition: all 0.3s;
+}
+
+header nav div div ul li a:hover {
+    color: #5CB6A9;
+}
+
+
+
+main {
+    margin: 0px;
+}
+
+main section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 130%;
+    margin: 50px 0;
+}
+
+main section form label {
+    color: #D90080;
+    font-weight: bold;
+}
+
+main section form p {
+    color: #D90080;
+    font-weight: bold;
+}
+
+main section form div button {
+    border: none;
+    background-color: #5CB6A9;
+    color: #fff;
+    padding: 10px;
+    margin: 20px 20px;
+    transition: all 0.3s;
+}
+
+main section form div button:hover{
+    background-color: #D90080;
+}
+
+.formBox {
+    background-color: #D7D9DD;
+    border-style: none;
+    height: 30px;
+}
+
+.formOptions {
+    display: flex;
+    align-items: baseline;
+}
+
+.formOptions-items {
+    padding: 0 10px;
+    justify-content: space-around;
+}
+
+.formOptions-text {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+h3 {
+
+    text-align: center;
+    color: #D90080;
+    font-size: 30px;
+    margin: 30px 0;
+
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    padding: 50px 0 50px 0;
+    justify-content: center;
+    background-color: #5CB6A9;
+    align-items: center;
+}
+
+footer p {
+    margin: 0 5px;
+}
+
+footer a img {
+    margin: 0 5px;
+
+}
+
+main section h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40pt;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 30px 0; 
+    text-align: center;
+    animation: aparecer 0.5s ease-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.sectionTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5CB6A9;
+    padding: 50px 0 50px 0;
+    border-bottom: 5px solid #D90080;
+
+}
+
+.mainHome {
+    padding: 0;
+    margin: 0;
+}
+
+.imgCentral {
+    background-image: url(./Img/origami-paper-hearts.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+}
+
+.pText {
+    color: #fff;
+    font-size: 15pt;
+    align-items: center;
+    text-align: center;
+    max-width: 920px;
+}
+
+.pList {
+    display: flex;
+    list-style-type: none;
+    color: #D7D9DD;
+    justify-content: space-around;
+    min-width: 800px;
+}
+
+.flexTiktok {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.libros {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.libros__item1 {
+    animation: libros 1s ease-out 00.5s;
+}
+.libros__item2 {
+    animation: libros 1.5s ease-out 00.5s;
+}
+.libros__item3 {
+    animation: libros 2s ease-out 00.5s;
+}
+.libros__item4 {
+    animation: libros 2.5s ease-out 00.5s;
+}
+.libros__item5 {
+    animation: libros 3s ease-out 00.5s;
+}
+.libros__item6 {
+    animation: libros 3.5s ease-out 00.5s;
+}
+.libros__item7 {
+    animation: libros 4s ease-out 00.5s;
+}
+
+@keyframes libros {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@media (max-width: 930px) {
+    .pList {
+        display: none;
+    }
+    .libros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pText {
+        margin: 0 10%;
+    }
+    .imgCentral {
+        height: 900px;
+    }
+    header nav div a img {
+        margin-left: 5px;
+    }
+
+}
+@media (max-width: 550px) {
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    .libros {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main section h1 {
+        font-size: 35px;
+    }
+    .pText {
+        font-size: 15px;
+    }
+    .imgCentral {
+        height: 600px;
+    }
+
+}
