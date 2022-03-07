@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: baloo2 ;
-    src: url(./Font/Baloo2-Regular.ttf);
+    src: url(./font/Baloo2-Regular.ttf);
 }
 
 body {
@@ -190,7 +190,7 @@ main section h1 {
 }
 
 .imgCentral {
-    background-image: url(./Img/origami-paper-hearts.jpeg);
+    background-image: url(./img/origami-paper-hearts.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
