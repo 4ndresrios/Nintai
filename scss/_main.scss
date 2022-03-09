@@ -1,0 +1,175 @@
+main {
+    margin: 0px;
+    section {
+        h1 {
+            color: $colorUno;
+            font-weight: bold;
+            font-size: 40pt;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 0 30px 0; 
+            text-align: center;
+            animation: aparecer 0.5s ease-out;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 130%;
+            margin: 50px 0;
+            label {
+                color: $colorDos;
+                font-weight: bold;
+            }
+            p {
+                color: $colorDos;
+                font-weight: bold;
+            }
+            div button {
+                border: none;
+                background-color: $colorTres;
+                color: $colorUno;
+                padding: 10px;
+                margin: 20px 20px;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: $colorDos;
+                }
+            }
+        }
+    }
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.formBox {
+    background-color: $colorCuatro;
+    border-style: none;
+    height: 30px;
+}
+.formOptions {
+    display: flex;
+    align-items: baseline;
+}
+.formOptions-items {
+    padding: 0 10px;
+    justify-content: space-around;
+}
+.formOptions-text {
+    font-size: 16px;
+    margin-left: 20px;
+}
+.sectionTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colorTres;
+    padding: 50px 0 50px 0;
+    border-bottom: 5px solid $colorDos;
+}
+.mainHome {
+    padding: 0;
+    margin: 0;
+}
+.imgCentral {
+    background-image: url(../img/origami-paper-hearts.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1080px;
+}
+.pText {
+    color: $colorUno;
+    font-size: 15pt;
+    align-items: center;
+    text-align: center;
+    max-width: 920px;
+}
+.pList {
+    display: flex;
+    list-style-type: none;
+    color: $colorCuatro;
+    justify-content: space-around;
+    min-width: 800px;
+}
+.flexTiktok {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $colorUno;
+}
+.libros {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.libros__item1 {
+    animation: libros 1s ease-out 00.5s;
+}
+.libros__item2 {
+    animation: libros 1.5s ease-out 00.5s;
+}
+.libros__item3 {
+    animation: libros 2s ease-out 00.5s;
+}
+.libros__item4 {
+    animation: libros 2.5s ease-out 00.5s;
+}
+.libros__item5 {
+    animation: libros 3s ease-out 00.5s;
+}
+.libros__item6 {
+    animation: libros 3.5s ease-out 00.5s;
+}
+.libros__item7 {
+    animation: libros 4s ease-out 00.5s;
+}
+@keyframes libros {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 930px) {
+    .pList {
+        display: none;
+    }
+    .libros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pText {
+        margin: 0 10%;
+    }
+    .imgCentral {
+        height: 900px;
+    }
+}
+@media (max-width: 550px) {
+    .libros {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main section h1 {
+        font-size: 35px;
+    }
+    .pText {
+        font-size: 15px;
+    }
+    .imgCentral {
+        height: 600px;
+    }
+}

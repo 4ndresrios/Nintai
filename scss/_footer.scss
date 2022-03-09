@@ -1,0 +1,22 @@
+footer {
+    color: $colorUno;
+    display: flex;
+    padding: 50px 0 50px 0;
+    justify-content: center;
+    background-color: $colorTres;
+    align-items: center;
+    p {
+        margin: 0 5px;
+    }
+    a img {
+        margin: 0 5px;
+    }
+}
+@media (max-width: 550px) {
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}

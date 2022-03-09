@@ -1,0 +1,44 @@
+header {
+    background-color: $colorUno;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    nav div {
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        text-align: right;
+        a img {
+            padding: 0.5px;
+            width: 150px;
+            margin-left: 30px;
+        }
+        div ul li{
+            margin: 0 15px;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }    
+        div ul li a{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            color: $colorDos;
+            transition: all 0.3s;
+            &:hover {
+            color: $colorTres;
+            }   
+        }
+    } 
+}
+@media (max-width: 930px) {
+    header nav div a img {
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: baloo2;
+    src: url(../font/Baloo2-Regular.ttf);
+}
+body {
+    font-family: baloo2;
+}
+.paginaActual {
+    color: $colorTres;
+}
+h3 {
+    text-align: center;
+    color: $colorTres;
+    font-size: 30px;
+    margin: 30px 0;
+}
