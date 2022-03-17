@@ -12,9 +12,52 @@ body {
 .paginaActual {
     color: $colorTres;
 }
-h3 {
+.titulos {
+    color: $colorUno;
+    font-weight: bold;
+    font-size: 40pt;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 30px 0; 
     text-align: center;
-    color: $colorTres;
-    font-size: 30px;
-    margin: 30px 0;
+    animation: aparecer 0.5s ease-out;
+}
+@mixin button($paddingLR, $enviar) {
+    border: none;
+    background-color: $colorTres;
+    color: $colorUno;
+    padding: 10px $paddingLR;
+    margin: 20px 20px;
+    transition: all 0.3s;
+    &:hover {
+    background-color: $colorCuatro;
+    }
+    @if ($enviar == 'yes') {
+        &:hover {
+            background-color: $colorDos;
+        }
+    }
+}
+@for $i from 1 through 7 {
+    .libros-#{$i} {
+        animation: libros 0.3s*$i  ease-out 00.5s;
+    }
+}
+$rrss: (
+    facebook: #3b5998,
+    instagram: #c92d8f,
+    tiktok: #f12a51,
+);
+@each $rs, $color in $rrss {
+    .btn-#{$rs} {
+        background-color: $color;
+        color: $colorUno;
+        border: 0;
+        cursor: pointer;
+        padding: 3px 15px;
+        border-radius: 20px;
+    }
+    
 }
